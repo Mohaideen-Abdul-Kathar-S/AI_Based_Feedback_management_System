@@ -1,0 +1,51 @@
+header{
+    background-color: #ffffff;
+    text-align: center;
+}
+header img{
+    height: 120px;
+    width: auto;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* center button vertically */
+  /* padding: 10px 20px; */
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column; /* p goes below image */
+  align-items: flex-start;
+  
+}
+
+header img {
+  width: 200px;
+  height: 62px;
+}
+
+header p {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight:600;
+  color: #525252;
+  padding-left: 20px;
+}
+
+header button {
+  width: 75px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #2090BD;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+}

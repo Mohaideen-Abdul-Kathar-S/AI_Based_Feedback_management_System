@@ -1,0 +1,67 @@
+.date-wrapper {
+  position: relative;
+  width: 300px;
+}
+
+/* Input */
+.date-input {
+  width: 300px;
+  height: 40px;
+
+  padding: 0 40px 0 20px; /* space for icon */
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border: 1.5px solid #000;
+
+  background-color: #ffffff;
+  color: #333;
+
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+
+  /* hide default icon (Chrome) */
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Placeholder-like hint (yyyy-mm-dd → dd.mm.yyyy visually not changeable) */
+
+/* 🟢 Secondary (hover) */
+.date-input:hover {
+  border-color: #2e7d32;
+}
+
+/* 🔵 Primary (focus) */
+.date-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
+}
+
+/* Calendar icon */
+.date-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  cursor: pointer;
+  color: #1e88e5;
+}
+
+/* 📱 Mobile friendly */
+@media (max-width: 600px) {
+  .date-wrapper,
+  .date-input {
+    width: 150px;
+  }
+
+  .date-input {
+    height: 40px;
+    font-size: 16px;
+  }
+}

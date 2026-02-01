@@ -1,0 +1,140 @@
+/* 🔹 ROW LAYOUT */
+.search-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 75%;
+}
+
+/* ========================= */
+/* 🔽 SELECT (YEAR) */
+/* ========================= */
+
+.select-wrapper {
+  position: relative;
+  flex: 0 0 90px; /* desktop width */
+}
+
+/* Select box */
+.select-input {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 40px 0 20px; /* left + arrow space */
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border: 1.5px solid #000;
+
+  background-color: #ffffff;
+  color: #9e9e9e; /* default gray */
+
+  cursor: pointer;
+  outline: none;
+
+  /* remove native arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  transition: all 0.25s ease;
+}
+
+/* 🔵 Primary (focus) */
+.select-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
+}
+
+/* 🟢 Secondary (hover) */
+.select-input:hover {
+  border-color: #2e7d32;
+}
+
+/* When value selected */
+.select-input:valid {
+  color: #333;
+}
+
+/* Custom arrow */
+.select-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1e88e5;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* ========================= */
+/* 🔍 SEARCH INPUT */
+/* ========================= */
+
+.mail-input {
+  flex: 1;
+  height: 40px;
+
+  padding: 0 16px;
+  font-size: 14px;
+
+  border-radius: 10px;
+  border: 1.5px solid #000;
+  outline: none;
+
+  transition: all 0.25s ease;
+}
+
+.mail-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
+}
+
+/* 🔍 Search input wrapper */
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+/* Icon inside input */
+.search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #1e88e5; /* primary blue */
+  pointer-events: none;
+}
+
+/* Add space for icon */
+.mail-input {
+  padding-right: 65px;
+}
+
+/* ========================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .search-bar-row {
+    width: 100%;
+    gap: 8px;
+  }
+
+  .select-wrapper {
+    flex: 0 0 80px; /* compact year select */
+  }
+
+  .select-input {
+    padding-left: 10px;
+    padding-right: 24px;
+    font-size: 13px;
+  }
+
+  .mail-input {
+    font-size: 14px;
+  }
+}

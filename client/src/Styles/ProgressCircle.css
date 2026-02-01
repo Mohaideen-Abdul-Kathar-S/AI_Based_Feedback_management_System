@@ -1,0 +1,44 @@
+.progress-wrapper {
+  width: 100px;
+  text-align: center;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* SVG */
+.progress-svg {
+  transform: rotate(-90deg);
+}
+
+/* Background circle */
+.progress-bg {
+  fill: none;
+  stroke: #e0e0e0;
+}
+
+/* Progress stroke */
+.progress-bar {
+  fill: none;
+  stroke: #1e88e5; /* primary blue */
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+/* Percentage text */
+.progress-text {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Label below circle */
+.progress-label {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}

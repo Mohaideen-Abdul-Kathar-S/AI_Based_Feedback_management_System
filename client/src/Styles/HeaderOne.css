@@ -1,0 +1,15 @@
+header{
+    background-color: #ffffff;
+    text-align: center;
+}
+header img{
+    height: 120px;
+    width: auto;
+    padding: 10px;
+}
+
+@media (max-width: 600px){
+    header img{
+        height: 80px;
+    }
+}

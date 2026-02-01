@@ -1,0 +1,51 @@
+.mail-input {
+  width: 300px;
+  height: 40px;
+
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border: 1.5px solid #000;
+
+  background-color: #ffffff;
+  color: #333;
+
+  outline: none;
+  cursor: text;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+/* Placeholder */
+.mail-input::placeholder {
+  color: #9e9e9e;
+  font-weight: 400;
+}
+
+/* 🟢 Secondary (hover) */
+.mail-input:hover {
+  border-color: #2e7d32;
+}
+
+/* 🔵 Primary (focus) */
+.mail-input:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
+}
+
+/* Invalid email (optional visual feedback) */
+.mail-input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #d32f2f;
+}
+
+/* 📱 Mobile-friendly */
+@media (max-width: 600px) {
+  .mail-input {
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
