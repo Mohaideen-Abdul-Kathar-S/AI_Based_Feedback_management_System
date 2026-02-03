@@ -1,14 +1,15 @@
 import { useState } from 'react'
+import './App.css'
 
-
-import StudentListContainer from './components/StudentListContainer'
-
+import SignUp from './screens/SignUp';
+import Footer from './components/Footer';
 function App() {
 
 
   return (
     <>
-     <StudentListContainer />
+     <SignUp />
+     <Footer Roll="SignIn Page"/>
     </>
   )
 }

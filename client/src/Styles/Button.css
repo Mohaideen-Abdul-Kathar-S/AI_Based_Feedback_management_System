@@ -1,0 +1,34 @@
+/* Default hidden for desktop */
+.mobile-button {
+  /* display: none; */
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .mobile-button {
+    /* display: block; */
+    width: 280px;
+    height: 40px;
+    /* margin: 0 auto; */
+  }
+
+  /* Color Variants */
+  .mobile-button.primary {
+    margin-top: 20px;
+    background-color: #2090bd;
+  }
+
+  .mobile-button.secondary {
+    background-color: #84bb29;
+  }
+
+  .mobile-button.tertiary {
+    background-color: #da1c03;
+  }
+}

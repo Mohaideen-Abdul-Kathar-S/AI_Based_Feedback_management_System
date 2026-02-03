@@ -3,11 +3,12 @@
   height: 40px;
 
   padding: 0 20px;
-  font-size: 14px;
+  /* margin-top: 4px; */
+  font-size: 12px;
   font-weight: 500;
 
   border-radius: 10px;
-  border: 1.5px solid #000;
+  border: 1px inset #A4A3A3;
 
   background-color: #ffffff;
   color: #333;
@@ -43,9 +44,15 @@
 
 /* 📱 Mobile-friendly */
 @media (max-width: 600px) {
+  h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #525252;
+  }
   .mail-input {
-    width: 300px;
+    width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 12px;
+    margin-top: -4px;
   }
 }
