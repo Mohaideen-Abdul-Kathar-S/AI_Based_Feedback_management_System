@@ -1,0 +1,61 @@
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .tech-card{
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        width: 340px;
+        height: 80px;
+        margin-bottom: 11px;
+        justify-content: space-between;
+        border-radius: 10px;
+        /* padding: 10px; */
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    .text-area{
+        /* display: flex;
+        flex-direction: column; */
+        /* justify-content: center; */
+        /* margin-left: 10px; */
+        /* background-color: tomato; */
+        /* padding: 50px; */
+    }
+
+    .icon-area{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-right: 20px;
+
+    }
+
+    .tech-name{
+        font-size: 14px;
+        font-weight: 700;
+        color: #2090BD;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    .rounds, .dates{
+        font-size: 10px;
+        font-weight: 700;
+        color: #525252;
+        padding-left: 20px;
+        margin-top: -5px;
+    }
+
+    .icon1, .icon2 {
+    font-size: 20px;   /* react-icons size */
+    cursor: pointer;
+    color: #525252;
+  }
+
+  .icon1:hover, .icon2 :hover {
+    color: #2090bd;
+  }
+}

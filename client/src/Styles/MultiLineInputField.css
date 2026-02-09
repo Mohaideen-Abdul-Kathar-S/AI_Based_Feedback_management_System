@@ -39,7 +39,9 @@
 /* 📱 Mobile-friendly */
 @media (max-width: 600px) {
   .multi-line-input {
-    width: 300px;
+    width: 280px;
     font-size: 16px;
+     border: 1px inset #A4A3A3;
   }
+ 
 }

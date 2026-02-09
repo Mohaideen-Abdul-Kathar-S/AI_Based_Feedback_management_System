@@ -1,8 +1,9 @@
 /* Base styles */
 .tab-bar {
   background-color: #ffffff;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid #BCB3B3;
+  border-bottom: 1px solid #BCB3B3;
+ 
 }
 
 
@@ -27,10 +28,14 @@
 /* 📱 Mobile view */
 @media (max-width: 600px) {
   .tab-bar {
-     
+    
     width: 360px;
     height: 40px;
-    margin: 0 auto;          /* center horizontally */
+   margin-top: 137px;  
+   position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);        /* center horizontally */
   }
 
   .tab-list {

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Styles/SelectInputField.css';
 
-export default function SelectInputField() {
+export default function SelectInputField({title}) {
   let items = ["Option 1", "Option 2"];
 const [selectedOption, setSelectedOption] = React.useState('');
 
@@ -11,6 +11,10 @@ function handleOptionChange(e) {
   }
   return (
     <div className="select-wrapper">
+      
+       <h3>
+      {title}
+      </h3>
       <select className="select-input" defaultValue="" onChange={handleOptionChange}>
         <option value="" disabled hidden>
           Select

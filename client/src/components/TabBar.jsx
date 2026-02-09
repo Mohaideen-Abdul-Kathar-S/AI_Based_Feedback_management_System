@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Styles/TabBar.css'
-export default function TabBar() {
-    let roll = "Coordinator";
+export default function TabBar({roll, setActiveTab}) {
+   
     let tabs = {
         "Student":["Company", "Feedback"],
         "Placement Cell":["On Going", "New Entry"],
@@ -10,6 +10,7 @@ export default function TabBar() {
     const [selectedTab, setSelectedTab] = React.useState(tabs[roll][0]);
     function handleTabClick(tabName) {
         setSelectedTab(tabName);
+        setActiveTab(tabName);
     }
   return (
     <nav className="tab-bar">

@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import './App.css'
-
-import SignUp from './screens/SignUp';
 import Footer from './components/Footer';
+import CoordinatorDhashboard from './screens/CoordinatorDhashboard';
 function App() {
 
 
   return (
     <>
-     <SignUp />
-     <Footer Roll="SignIn Page"/>
+     <CoordinatorDhashboard />
+     <Footer Roll="Coordinator"/>
     </>
   )
 }

@@ -1,0 +1,23 @@
+@media(max-width: 600px) {
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 190px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 10px;
+    /* width: 300px; */
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+}
+.companyFormTitle{
+    
+    color: #2090BD;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: center;
+  
+
+}
+}

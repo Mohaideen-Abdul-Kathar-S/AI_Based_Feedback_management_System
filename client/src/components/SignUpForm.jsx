@@ -4,6 +4,10 @@ import MailInputField from './MailInputField';
 import PasswordInputField from './PasswordInputField';
 import Button from './Button';
 export default function SignUpForm() {
+  function handleSignInRedirect() {
+    // Logic to redirect to Sign In page
+    console.log("Redirecting to Sign In page");
+  }
   return (
     <div className="Form-container">
         <h3 className="Form-title">Start your journey</h3>
@@ -14,7 +18,7 @@ export default function SignUpForm() {
         <PasswordInputField type="password" placeholder="Confirm here" title="Confirm Password" />
        
         <Button label="Submit" variant="primary" onClick=""/>
-        <p>Existing user? <span>Sign in</span></p>
+        <p>Existing user? <span onClick={handleSignInRedirect}>Sign in</span></p>
     </div>
   )
 }

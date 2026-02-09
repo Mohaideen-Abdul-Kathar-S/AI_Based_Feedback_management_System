@@ -1,35 +1,30 @@
-.date-wrapper {
-  position: relative;
-  width: 300px;
-}
-
-/* Input */
 .date-input {
   width: 300px;
   height: 40px;
 
-  padding: 0 40px 0 20px; /* space for icon */
-  font-size: 14px;
+  padding: 0 20px;
+  /* margin-top: 4px; */
+  font-size: 12px;
   font-weight: 500;
 
   border-radius: 10px;
-  border: 1.5px solid #000;
+  border: 1px inset #A4A3A3;
 
   background-color: #ffffff;
   color: #333;
 
   outline: none;
-  cursor: pointer;
+  cursor: text;
 
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: all 0.25s ease;
-
-  /* hide default icon (Chrome) */
-  appearance: none;
-  -webkit-appearance: none;
 }
 
-/* Placeholder-like hint (yyyy-mm-dd → dd.mm.yyyy visually not changeable) */
+/* Placeholder */
+.date-input::placeholder {
+  color: #9e9e9e;
+  font-weight: 400;
+}
 
 /* 🟢 Secondary (hover) */
 .date-input:hover {
@@ -42,26 +37,22 @@
   box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.25);
 }
 
-/* Calendar icon */
-.date-icon {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  cursor: pointer;
-  color: #1e88e5;
+/* Invalid email (optional visual feedback) */
+.date-input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #d32f2f;
 }
 
-/* 📱 Mobile friendly */
+/* 📱 Mobile-friendly */
 @media (max-width: 600px) {
-  .date-wrapper,
-  .date-input {
-    width: 150px;
+  h3{
+    font-size: 14px;
+    font-weight: 700;
+    color: #525252;
   }
-
   .date-input {
+    width: 280px;
     height: 40px;
-    font-size: 16px;
+    font-size: 12px;
+    margin-top: -4px;
   }
 }

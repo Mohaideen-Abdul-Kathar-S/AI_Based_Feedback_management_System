@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import '../Styles/DateInputField.css';
 
-export default function DateInputField() {
+export default function DateInputField({title}) {
   const dateRef = useRef(null);
 
   const [date, setDate] = useState('');
@@ -12,6 +12,9 @@ export default function DateInputField() {
 
   return (
     <div className="date-wrapper">
+      <h3>
+      {title}
+      </h3>
       <input
         ref={dateRef}
         type="date"

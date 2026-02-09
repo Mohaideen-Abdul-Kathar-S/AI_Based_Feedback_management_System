@@ -1,0 +1,61 @@
+.company-card {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+  transition: height 0.3s ease;
+  
+}
+
+/* Header — collapsed height control */
+.company-header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2090bd;
+}
+
+.arrow {
+  font-size: 22px;
+  color: #666;
+}
+
+/* Expanded section */
+.button-section {
+  margin-top: 14px;
+  height: 140px; /* 180 - header space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Buttons size fixed */
+.primary-btn,
+.secondary-btn {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.primary-btn {
+  background: #2090bd;
+  margin-bottom: 12px;
+}
+
+.secondary-btn {
+  background: #84bb29;
+}

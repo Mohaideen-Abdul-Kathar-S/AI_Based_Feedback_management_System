@@ -1,0 +1,100 @@
+@media(max-width: 786px){
+    .FeedbackList{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .FeedbackList-item{
+        width: 330px;
+        height: 80px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+    .mail{
+        margin-left: 20px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #2090BD;
+    }
+
+    .companyname{
+ margin-left: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #525252;
+        margin-bottom: -10px;
+    }
+    .roundNo{
+ margin-left: 20px;
+        font-size: 10px;
+        font-weight: 700;
+        color: #525252;
+    }
+
+    .goicon{
+        margin-right: 20px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .FeedbackForm-Container{
+        margin-top: 200px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display:flex;
+        flex-direction: column;
+        width: 340px;
+        min-height: 1350px;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.25);
+      
+    }
+
+    .res-head{
+        font-size: 18px;
+        font-weight: 700;
+        color: #2090BD;
+     
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .inputList{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 950px;
+         border-radius:20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+        margin-top: -25px;
+        margin-bottom: 10px;
+      
+    }
+
+    .bntCont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        /* margin-top: 20px; */
+        gap: 10px;
+        
+    }
+
+    .icon{
+        margin-left: 15px;
+        padding-right: 5px;
+    }
+}
