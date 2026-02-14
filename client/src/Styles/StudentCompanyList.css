@@ -1,0 +1,43 @@
+/* Hidden on desktop */
+.company-list-card {
+  display: none;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+   body {
+    padding-bottom: 80px; /* footer height */
+  }
+  .company-list-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 331px;
+    height: 50px;
+    padding: 0 16px;
+    margin: 10px auto;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.25);
+
+    cursor: pointer;
+  }
+
+  .company-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #646464;
+  }
+
+  .arrow-icon {
+    font-size: 22px;
+    color: #646464;
+  }
+
+  .company-list-card:active {
+    transform: scale(0.98);
+  }
+}

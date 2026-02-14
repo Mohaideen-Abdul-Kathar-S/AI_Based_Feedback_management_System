@@ -1,0 +1,88 @@
+.form-container {
+  width: 320px;
+  margin: 150px auto 100px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.25);
+}
+
+.form-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2090BD;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #525252;
+  display: block;
+  margin-top: 10px;
+}
+
+/* INPUT COMMON */
+input,
+textarea {
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #525252;
+}
+
+/* Placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+}
+
+/* Field Heights */
+input[type="number"] {
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+
+textarea[name="subjects"],
+textarea[name="topics"],
+textarea[name="advice"] {
+  height: 75px;
+}
+
+textarea[name="questions"],
+textarea[name="roundConstraints"] {
+  height: 113px;
+}
+
+/* Submit Button */
+button {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  background: #84BB29;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Notification */
+.success-notification {
+  background: #84BB29;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
